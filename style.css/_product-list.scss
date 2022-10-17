@@ -19,7 +19,7 @@
     }
 
     &__description {
-        font-size: 1.4em;
+        font-size: 20px;
         color: #414141;
     }
 
@@ -31,20 +31,13 @@
     }
 
     &__searchInput {
-        // border: none;
+        font-size: 16px;
         width: 338px;
         height: 42px;
         border-radius: 30px;
         border: 1px solid #C3C8CC;
         padding-left: 24px;
         background: transparent;
-        // &:hover {
-        //     border: 1px solid #414141;
-        //     // не работает border-radius
-        //     border-radius: 30px; 
-        //     border-image-source: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
-        //     border-image-slice: 1;
-        // }
     }
 
     &__iconSearch {
@@ -59,7 +52,7 @@
         background: #FFFFFF;
         border-radius: 16px;
         padding: 8px 13.5px 8px 13.5px;
-        font-size: 1.14em;
+        font-size: 16px;
         color: #414141;
         max-width: max-content;
         &:not(:last-child) {
@@ -73,19 +66,19 @@
 
 
     &__header {
-        font-size: 2.5em;
+        font-size: 35px;
         color: #414141;
         margin-right: 8px;
     }
 
     &__span {
         color: #65676E;
-        font-size: 1.7em;
+        font-size: 24px;
     }
 
     &__title {
         margin-bottom: 24px;
-        font-size: 1.4em;
+        font-size: 20px;
     }
 
     &__inputs {
@@ -106,14 +99,14 @@
     }
 
     &__text {
-        font-size: 1.14em;
+        font-size: 16px;
         color: #414141;
     }
 
     &__input {
         border: none; 
         color: #65676E;
-        font-size: 1.14em;
+        font-size:  16px;
         padding: 0 10px;
         background: transparent;
     }
@@ -200,7 +193,7 @@
         background: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
         box-shadow: 0px 6px 28px rgba(134, 151, 255, 0.16);
         cursor: pointer;
-        font-size: 1.14em;
+        font-size:  16px;
     }
 
     &__buttonReset {
@@ -209,7 +202,7 @@
     }
 
     &__gradientButton {
-        font-size: 1.14em;
+        font-size:  16px;
         color: transparent;    
         -webkit-background-clip: text;
         background-clip: text;

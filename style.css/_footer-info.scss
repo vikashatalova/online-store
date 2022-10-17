@@ -13,7 +13,7 @@
         margin-bottom: 8px;
         a {
             font-weight: 500;
-            font-size: 1.7em;
+            font-size: 24px;
             line-height: 29px;
             color: $primary-color;
             text-decoration: none;
@@ -23,7 +23,7 @@
     &__email {
         a {
             font-weight: 400;
-            font-size: 1.14em;
+            font-size: 16px;
             line-height: 20px;
             color: $primary-color;
             text-decoration: none;
@@ -53,7 +53,7 @@
     &__header {
         list-style: none;
         font-weight: 500;
-        font-size: 1.4em;
+        font-size: 20px;
         line-height: 24px;
         color: $primary-color;
         margin-bottom: 24px;
@@ -62,7 +62,7 @@
     &__text {
         list-style: none;
         font-weight: 400;
-        font-size: 1.14em;
+        font-size: 16px;
         line-height: 22px;
         color: #B7BDC7;
         &:not(:last-child) {
@@ -84,7 +84,7 @@
 
     &__socialHeader {
         font-weight: 500;
-        font-size: 1.2em;
+        font-size: 17px;
         line-height: 25px;
         color: $primary-color;
         margin-bottom: 4px;
@@ -94,7 +94,7 @@
         text-align: center;
         word-wrap: break-word;
         font-weight: 400;
-        font-size: 1em;
+        font-size: 14px;
         line-height: 21px;
         color: #B7BDC7;
         margin-bottom: 24px;
@@ -116,7 +116,7 @@
         a {
             text-decoration: none;
             font-weight: 500;
-            font-size: 1em;
+            font-size: 14px;
             line-height: 17px;
             color: $primary-color;
         }
@@ -137,7 +137,7 @@
         a {
             text-decoration: none;
             font-weight: 500;
-            font-size: 1em;
+            font-size: 14px;
             line-height: 17px;
             color: $primary-color;
         }
