@@ -1,0 +1,220 @@
+.product-list {
+    margin-right: 30px;
+
+    &__headers {
+        display: flex;
+        align-items: center;
+        margin: 69px auto 33px auto;
+
+    }
+
+    &__container {
+        max-width: 338px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+    }
+
+    &__description {
+        font-size: 1.4em;
+        color: #414141;
+    }
+
+    &__search {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__searchInput {
+        // border: none;
+        width: 338px;
+        height: 42px;
+        border-radius: 30px;
+        border: 1px solid #C3C8CC;
+        padding-left: 24px;
+        background: transparent;
+        // &:hover {
+        //     border: 1px solid #414141;
+        //     // не работает border-radius
+        //     border-radius: 30px; 
+        //     border-image-source: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
+        //     border-image-slice: 1;
+        // }
+    }
+
+    &__iconSearch {
+        position: absolute;
+        right: 24px;
+    }
+
+    
+
+    &__category-item {
+        list-style: none;
+        background: #FFFFFF;
+        border-radius: 16px;
+        padding: 8px 13.5px 8px 13.5px;
+        font-size: 1.14em;
+        color: #414141;
+        max-width: max-content;
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__decoration {
+        color: #A9AEB2;
+    }
+
+
+    &__header {
+        font-size: 2.5em;
+        color: #414141;
+        margin-right: 8px;
+    }
+
+    &__span {
+        color: #65676E;
+        font-size: 1.7em;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-size: 1.4em;
+    }
+
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        width: 160px;
+        height: 42px;
+        border: 1px solid #C3C8CC;
+        border-radius: 30px;
+        padding: 0 11px;
+    }
+
+    &__text {
+        font-size: 1.14em;
+        color: #414141;
+    }
+
+    &__input {
+        border: none; 
+        color: #65676E;
+        font-size: 1.14em;
+        padding: 0 10px;
+        background: transparent;
+    }
+
+    &__slider {
+        margin-top: 26px;
+        width: calc(100% - 17px);
+    }
+
+
+    .noUi-target{
+        background: #E5E6E9;
+        border: none;
+        border-radius: 100px;
+        box-shadow: none;
+        height: 2px;
+    }
+
+    .noUi-connect {
+        background: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
+    }
+
+    .noUi-handle::after,
+    .noUi-handle::before {
+        display: none;
+    }
+
+    .noUi-handle {
+        background: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
+        /* white */
+        border: 3px solid #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(68, 64, 107, 0.06);
+        border-radius: 50%;
+    }
+
+    .noUi-horizontal .noUi-handle {
+        width: 20px;
+        height: 20px;
+        top: -10px;
+    }
+
+    .noUi-horizontal .noUi-handle-upper {
+        right: 0;
+    }
+
+    &__model {
+        margin-top: 32px;
+        display: flex;
+        align-items: unset;
+
+    }
+
+
+    &__arrow {
+        position: relative;
+        margin-right: 16px;
+        width: 28px;
+        height: 28px;
+        border: 1px solid #E5E6E9;
+        border-radius: 30px;
+        &::before { //при наведении стрелка должна быть белой
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 35%;
+            top: 43%;
+            width: 7px;
+            height: 7px;
+            border-top: 1.5px solid #90949A;
+            border-right: 1.5px solid #90949A;
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            background: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
+            transition: all 1s;
+            cursor: pointer;
+        }
+    }
+
+    &__buttonApple {
+        margin-top: 65px;
+        color: #fff;
+        background: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
+        box-shadow: 0px 6px 28px rgba(134, 151, 255, 0.16);
+        cursor: pointer;
+        font-size: 1.14em;
+    }
+
+    &__buttonReset {
+        margin-top: 36px;
+        background: #E8F0FD;
+    }
+
+    &__gradientButton {
+        font-size: 1.14em;
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
+    }
+    
+}
+

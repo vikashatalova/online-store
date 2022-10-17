@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1480px;
+}
+
+@media screen and (max-width: 1490px) {
+    .container {
+        max-width: 1400px;
+    }
+} 
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1310px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1250px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .container {
+        max-width: 809px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .container {
+        max-width: 630px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 463px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 120px;
+    }
+}
+
+.button {
+    width: 337px;
+    height: 56px;
+    border-radius: 30px;
+    border: none;
+    padding: 16px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input, textarea {
+    outline: 0;
+}
+
+.border {
+    border-bottom: 1px solid #E5E6E9;
+    width: 337px;
+    margin-top: 32px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

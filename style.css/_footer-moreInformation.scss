@@ -1,0 +1,29 @@
+.footer-moreInformation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 20px;
+    color: #B7BDC7;
+    padding: 20px 0;
+    background: linear-gradient(109.69deg, #07111D 5.76%, #0E2349 63.18%);
+
+    &__year {
+        text-transform: uppercase;
+    }
+
+    &__privacyPolicy {
+        display: flex;
+    }
+
+    &__text {
+        margin-right: 40px;
+    }
+
+    &__done {
+        display: flex;
+    }
+
+
+}

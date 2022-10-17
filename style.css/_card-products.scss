@@ -1,0 +1,144 @@
+.card-products {
+    padding: 10px; 
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__saleRed {
+        position: relative;
+        &::before {
+            content: '-20%';
+            display: inline-block;
+            position: absolute;
+            top: 9px;
+            left: -163px;
+            z-index: 1;
+            font-size: 12px;
+            color: $primary-color;
+        }
+
+        img {
+            position: absolute;
+            left: -182px;
+            top: 5px;
+        }
+    }
+
+    &__saleGreen {
+        position: relative;
+        
+        &::before {
+            content: 'Новинка';
+            position: absolute;
+            display: inline-block;
+            top: 46px;
+            left: -178px;
+            z-index: 1;
+            font-size: 12px;
+            color: $primary-color;
+        }
+
+        img {
+            position: absolute;
+            top: 43px;
+            left: -182px;
+        }
+    }
+
+    &__product {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 49px 0;
+        margin-bottom: 30px;
+        width: 338px;
+        height: 466px;
+        background: #FFFFFF;
+        border-radius: 24px;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 20px;
+    }
+
+
+    &__text {
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 25px;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 16px;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 1.7em;
+        line-height: 36px;
+        color: #414141;
+        text-align: center;
+    }
+
+    &__priceOff {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 21px;
+    text-decoration-line: line-through;
+    color: #A9AEB2;
+    }
+
+    &__saleRedRadius {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 38px;
+        height: 38px;
+        background: linear-gradient(99.57deg, #FFD06B -21%, #FC4D82 77.9%), #C4C4C4;
+        border-radius: 30px;
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            content: '-25%';
+            display: inline;
+            font-size: 12px;
+            color: $primary-color;
+        }
+    }
+
+    &__saleGreenRadius {
+        position: absolute;
+        top: 12px;
+        left: 54px;
+        width: 38px;
+        height: 38px;
+        background: linear-gradient(97.27deg, #27F1B5 5.91%, #1CA633 97.96%);
+        border-radius: 30px;
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 3px;
+            content: 'New';
+            text-transform: uppercase;
+            display: inline;
+            font-size: 12px;
+            color: $primary-color;
+        }
+    }
+
+    @media screen and (max-width: 1457px) {
+        .card-products {
+            &__container {
+                justify-content: center;
+            }
+        }
+    }
+}

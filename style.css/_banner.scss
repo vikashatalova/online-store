@@ -1,0 +1,313 @@
+.banner {
+    background: linear-gradient(90deg, #149ED3, #7253E4, #A948EC);
+    
+    &__background {
+        background-position-x: 164%;
+        background-image: url(/image/Joystick_3D-03-size.svg);
+        background-repeat: no-repeat;
+        background-size: 74%;
+    }
+    &__container {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    &__menu {
+        margin-right: 25px;
+    }
+    
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 28px;
+        color: #414141;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+        img {
+            margin-left: 4px;
+        }
+    }
+
+    &__logo {
+        margin-top: 42px;
+    }
+
+    &__header {
+        margin-right: 41px;
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    &__img {
+        margin-bottom: -4.7px;
+        bottom: 0;
+
+        img {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .banner {
+        &__background {
+            background-size: 80%;
+        }
+
+        &__list {
+            flex-direction: column;
+            font-size: 15px;
+        }
+
+        &__link {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .banner {
+        &__background {
+            background-size: 85%;
+        }
+
+        &__list {
+            align-items: flex-start;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner {
+        &__background {
+            background-size: 90%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1125px) {
+    .banner {
+        &__background {
+            background-size: 95%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        &__background {
+            background-size: 100%;
+        }
+
+        &__header {
+            margin-right: 21px;
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .banner {
+        &__menu {
+            margin-right: 15px;
+        }
+
+        &__header {
+            margin-right: 5px;
+        }
+
+        &__img {
+            position: relative;
+            right: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .banner {
+        &__background {
+            background-size: 110%;
+            background-position-x: -140%;
+        }
+
+        &__img {
+            right: 10px;
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 887px) {
+    .banner {
+        &__img {
+            right: 0;
+            bottom: -4.9px;
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .banner {
+        &__logo {
+            img {
+                width: 115%;
+            }
+        }
+
+        &__img {
+            right: -15px;
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 838px) {
+    .banner {
+        &__background {
+            background-size: cover;
+            background-position-x: -60%;
+        }
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .banner {
+        &__img {
+            img {
+                width: 97%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .banner {
+        &__img {
+            bottom: -5px;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .banner {
+        &__img {
+            bottom: -9px;
+        }
+
+        &__description {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .banner {
+        &__img {
+            bottom: -14px;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .banner {
+        &__img {
+            bottom: -17px;
+        }
+
+        &__background {
+            background-position-x: 10%;
+        }
+
+        &__logo {
+            img {
+                width: 110%;
+            }
+        }
+
+        &__img {
+            right: 0;
+            bottom: -14px;
+
+            img {
+                width: 110%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .banner {
+        &__img {
+            bottom: -20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        &__img {
+            right: 0;
+            bottom: -32px;
+        }
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .banner {
+        &__img {
+            right: 0;
+            bottom: -43px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .banner {
+
+        &__menu {
+            margin-right: 5px;
+        }
+
+        &__description {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        &__img {
+            bottom: -48px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .banner {
+        &__img {
+            bottom: -50px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        &__list {
+            font-size: 10px;
+        }
+    }
+}

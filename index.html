@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico.svg" type="image/x-con">
+    <link rel="stylesheet" href="style.css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/nouislider.min.css">
+    <title>Online-store</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <img src="image/logoNew.svg" alt="Logo" class="header__img">
+            </div>
+            <div class="header-katalog">
+                <img src="image/elem-katalog.svg" alt="Элемент каталога" class="header-katalog__before">
+                <button class="header-katalog__button">Каталог</button>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__container">
+                    <li class="navbar__list">
+                        <a href="" class="navbar__link">Доставка</a>
+                    </li>
+                    <li class="navbar__list">
+                        <a href="" class="navbar__link">Франшиза</a>
+                    </li>
+                    <li class="navbar__list">
+                        <a href="" class="navbar__link">Плоттер</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <p href="" class="header-contacts__location">г.Москва</p>
+                <img src="image/CaretDown.svg" alt="Стрелка вниз" class="header-contacts__arrow">
+            </div>
+            <!--переключатель с тменой на светлую тему-->
+            <div class="header-theme">
+                <div class="header-theme__icons">
+                    <img class="header-theme__sun" src="image/sun.svg" alt="Светлая тема">
+                    <img class="header-theme__moon" src="image/moon.svg" alt="Темная тема">
+                </div>
+                <input class="header-theme__darkmode-toggle" type="checkbox" id="darkmode-toggle">
+                <label class="header-theme__darkmode" for="darkmode-toggle">
+            </div>
+            <!--блок по поиску товаров,корзина,владелец-->
+            <div class="header-info">
+                <div class="header-info__search">
+                    <div class="header-info__search-icon">
+                        <img src="./image/search.svg" alt="Поиск">
+                    </div>
+                    <div class="header-info__shopping-card">
+                        <img src="./image/shoppingcartsimple.svg" alt="Корзина для  шоппинга">
+                    </div>
+                    <div class="header-info__shopping-card">
+                        <img src="./image/user.svg" alt="Пользователь">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="banner">
+            <div class="banner__background">
+                <div class="banner__container container">
+                    <div class="banner__menu">
+                        <ul class="banner__list">
+                            <li class="banner__link">Главная <img src="./image/arrow.svg" alt=""></li>
+                            <li class="banner__link">Категории товаров <img src="./image/arrow.svg" alt=""></li>
+                            <li class="banner__link">Чехлы</li>
+                        </ul>
+                    </div>
+                    <div class="banner__header">
+                        <div class="banner__logo">
+                            <img src="/image/header.svg" alt="Мега Скидки">
+                        </div>
+                        <p class="banner__description">в Черную пятницу</p>
+                    </div>
+                    <div class="banner__img">
+                        <img src="./image/joystik_frame.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="product-list__headers container">
+            <h1 class="product-list__header">Католог товаров</h1>
+            <span class="product-list__span">(15 789)</span>
+        </div>
+        <div class="main__container container">
+            <section class="product-list container">
+                <div class="product-list__container">
+                    <div class="product-list__list">
+                        <!-- <a href="#" class="product-list__arrow"><img src="/image/Group arrow.svg" alt="Стрелка вверх"></a> -->
+                        <div class="product-list__arrow"></div>
+                        <p class="product-list__description">Категории</p>
+                    </div>
+                    <div class="product-list__search">
+                        <input class="product-list__searchInput" type="text" name="search" placeholder="Поиск">
+                        <a href="#" class="product-list__iconSearch"><img src="/image/searchInput.svg" alt="Поиск"></a>
+                    </div>
+                    <ul class="product-list__category">
+                        <li class="product-list__category-item">Чехлы <span class="product-list__decoration">(4 789)</span></li>
+                        <li class="product-list__category-item">Стекла и пленки <span class="product-list__decoration">(3 345)</span></li>
+                        <li class="product-list__category-item">Гаджеты <span class="product-list__decoration">(12 443)</span></li>
+                        <li class="product-list__category-item">Кабели и ЗУ <span class="product-list__decoration">(1 232)</span></li>
+                        <li class="product-list__category-item">Макеты телефонов <span class="product-list__decoration">(300)</span></li>
+                        <li class="product-list__category-item">Наушники <span class="product-list__decoration">(3 432)</span></li>
+                        <li class="product-list__category-item">Power Bank <span class="product-list__decoration">(432)</span></li>
+                        <li class="product-list__category-item">Ремешки <span class="product-list__decoration">(432)</span></li>
+                        <li class="product-list__category-item">Тренды <span class="product-list__decoration">(215)</span></li>
+                        <li class="product-list__category-item">Аксессуары <span class="product-list__decoration">(124)</span></li>
+                    </ul>
+                    <div class="product-list__borderButton border"></div>
+                    <div class="product-list__price">
+                        <div class="product-list__model">
+                            <!-- <a href="#" class="product-list__arrow"><img src="/image/Group arrow.svg" alt="Стрелка вверх"></a> -->
+                            <div class="product-list__arrow"></div>
+                            <p class="product-list__title">Цена, ₽</p>
+                        </div>
+                        <div class="product-list__inputs">
+                            <label class="product-list__label">
+                                <span class="product-list__text">От</span>
+                                <input type="number" min="124" max="20000" placeholder="124" class="product-list__input" id="input-0">
+                            </label>
+                            <label class="product-list__label"> 
+                                <span class="product-list__text">До</span>
+                                <input type="number" min="124" max="20000" placeholder="20000" class="product-list__input inputNumber" id="input-1">
+                            </label>
+                        </div>
+                        <div class="product-list__slider" id="range-slider"></div>
+                    </div>
+                    <div class="product-list__borderButton border"></div>
+                    <div class="product-list__model">
+                        <!-- <a href="#" class="product-list__arrow"><img src="/image/Group arrow.svg" alt="Стрелка вверх"></a> -->
+                        <div class="product-list__arrow"></div>
+                        <p class="product-list__title">Модель</p>
+                    </div>
+                    <div class="product-list__borderButton border"></div>
+                    <div class="product-list__model">
+                        <!-- <a href="#" class="product-list__arrow"><img src="/image/Group arrow.svg" alt="Стрелка вверх"></a> -->
+                        <div class="product-list__arrow"></div>
+                        <p class="product-list__title">Производитель</p>
+                    </div>
+                    <div class="product-list__borderButton border"></div>
+                    <div class="product-list__buttonCroup">
+                        <button class="product-list__buttonApple button">Применить</button>
+                        <button class="product-list__buttonReset button"><p class="product-list__gradientButton">Сбросить</p></button>
+                    </div>
+                </div>
+            </section>
+            <div class="flex-column container">
+                <section class="card-category">
+                    <div class="card-category__container">
+                        <div class="card-category__item">
+                            <p class="card-category__text">Чехлы</p>
+                            <div class="card-category__image"><img src="/image/card-category/covers.svg" alt="Чехлы" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Стёкла <br> и пленки</p>
+                            <div class="card-category__image"><img src="/image/card-category/glasses&films.svg" alt="Стёкла и пленки" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Гаджеты</p>
+                            <div class="card-category__image"><img src="/image/card-category/gadgets.svg" alt="Гаджеты" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Кабели и ЗУ</p>
+                            <div class="card-category__image"><img src="/image/card-category/cables.svg" alt="Кабели и ЗУ" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Макеты телефонов</p>
+                            <div class="card-category__image"><img src="/image/card-category/phoneLayots.svg" alt="Макеты телефонов" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Наушники</p>
+                            <div class="card-category__image"><img src="/image/card-category/headphones.svg" alt="Наушники" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Power bank</p>
+                            <div class="card-category__image"><img src="/image/card-category/powerbank.svg" alt="Power bank" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Ремешки</p>
+                            <div class="card-category__image"><img src="/image/card-category/straps.svg" alt="Ремешки" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Тренды</p>
+                            <div class="card-category__image"><img src="/image/card-category/trends.svg" alt="Тренды" class="card-category__img"></div>
+                        </div>
+                        <div class="card-category__item">
+                            <p class="card-category__text">Аксессуары</p>
+                            <div class="card-category__image"><img src="/image/card-category/accessories.svg" alt="Аксессуары" class="card-category__img"></div>
+                        </div>
+                    </div>
+                </section>
+                <div class="filters">
+                    <div class="filters__dropdown">
+                        <div class="filters__select">
+                            <button class="filters__selected">По популярности</button>
+                            <div class="filters__caret"></div>
+                        </div>
+                        <div id="myDropdown" class="filters__menu">
+                            <div class="filters__dropDownContent">
+                                <input type="radio" class="filters__radio active">
+                                <label for="radio1" class="filters__label">По популярности</label>
+                            </div>
+                            <div class="filters__dropDownContent">
+                                <input type="radio" class="filters__radio">
+                                <label for="radio1" class="filters__label">По цене</label>
+                            </div>
+                            <div class="filters__dropDownContent">
+                                <input type="radio" class="filters__radio">
+                                <label for="radio1" class="filters__label">По размеру скидки</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters__menuActive">
+                        <div class="filters__itemImage">
+                            <img src="/image/menuFilters.svg" alt="">
+                        </div>
+                        <div class="filters__itemImage">
+                            <img src="/image/menu2Filters.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <section class="card-products">
+                    <div class="card-products__container">
+                        <article class="card-products__product">
+                            <div class="card-products__saleRed"><img src="image/saleRed.svg" alt="Скидка"></div>
+                            <div class="card-products__saleGreen"><img src="image/saleGreen.svg" alt="Скидка"></div>
+                            <img src="/image/card-product/card-product1.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <img src="/image/card-product/card-product2.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iphone 13 santa barbara knight силикон+кожа</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <div class="card-products__saleRed"><img src="image/saleRed.svg" alt="Скидка"></div>
+                            <div class="card-products__saleGreen"><img src="image/saleGreen.svg" alt="Скидка"></div>
+                            <img src="/image/card-product/card-product3.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <img src="/image/card-product/card-product1.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <img src="/image/card-product/card-product2.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <div class="card-products__saleRed"><img src="image/saleRed.svg" alt="Скидка"></div>
+                            <div class="card-products__saleGreen"><img src="image/saleGreen.svg" alt="Скидка"></div>
+                            <img src="/image/card-product/card-product4.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                    </div>
+                    <div class="card-banner">
+                        <div class="card-banner__banner-img">
+                            <img src="/image/headphone-dynamic.svg" alt="Беспроводные наушники">
+                        </div>
+                        <div class="card-banner__figure"><img src="/image/figure3D.svg" class="card__figureImg" alt=""></div>
+                        <div class="card-banner__description">
+                            <h3 class="card-banner__header">Беспроводные наушники</h3>
+                            <p class="card-banner__text">Эксклюзивные скидки на беспроводные наушники для <span class="card-banner__textSpan">iPhone</span></p>
+                        </div>
+                        <div class="card-banner__figure2"><img src="/image/figure2_3D.svg" alt=""></div>
+                    </div>
+                    <div class="card-products__container">
+                        <article class="card-products__product">
+                            <div class="card-products__saleRed"><img src="image/saleRed.svg" alt="Скидка"></div>
+                            <div class="card-products__saleGreen"><img src="image/saleGreen.svg" alt="Скидка"></div>
+                            <img src="/image/card-product/card-product1.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <img src="/image/card-product/card-product2.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iphone 13 santa barbara knight силикон+кожа</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <div class="card-products__saleRedRadius"></div>
+                            <div class="card-products__saleGreenRadius"></div>
+                            <img src="/image/card-product/card-product3.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <div class="card-products__saleRed"><img src="image/saleRed.svg" alt="Скидка"></div>
+                            <div class="card-products__saleGreen"><img src="image/saleGreen.svg" alt="Скидка"></div>
+                            <img src="/image/card-product/card-product1.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <img src="/image/card-product/card-product2.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                        <article class="card-products__product">
+                            <div class="card-products__saleRed"><img src="image/saleRed.svg" alt="Скидка"></div>
+                            <div class="card-products__saleGreen"><img src="image/saleGreen.svg" alt="Скидка"></div>
+                            <img src="/image/card-product/card-product4.svg" alt="Карточка товара" class="card-products__img">
+                            <p class="card-products__text">Чехол для iPhone 11 Ультратонкий силикон Premium (Черный)</p>
+                            <span class="card-products__price">65 ₽ - 70 ₽</span>
+                            <span class="card-products__priceOff">65 ₽ - 70 ₽</span>
+                        </article>
+                    </div>
+                    <div class="pagination">
+                        <button class="pagination__button">Показать еще</button>
+                        <div class="pagination__pages">
+                            <div class="pagination__pageItem">1</div>
+                            <div class="pagination__pageItem">2</div>
+                            <div class="pagination__pageItem">3</div>
+                            <div class="pagination__pageItem">4</div>
+                            <div class="pagination__pageItem">...</div>
+                            <div class="pagination__pageItem">22</div>
+                        </div>
+                        <div class="pagination__select">
+                            <span class="pagination__text">Следующая</span>
+                            <div class="pagination__caret"></div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="benefits container">
+            <h3 class="benefits__header">Преимущества</h3>
+            <div class="benefits__description">
+                <p class="benefits__textOne">
+                    В 2014 году мы начали с розничной продажи аксессуаров для мобильных телефонов: чехлов, защитных стёкол и внешних аккумуляторов. За небольшой промежуток времени нам удалось открыть 5 розничных магазинов в г. Краснодар.                </p>
+                <p class="benefits__textTwo">
+                    К нам все чаще стали обращаться люди с просьбой купить аксессуары оптом. Когда почти каждый день к нам стали обращаться по вопросам покупки чехлов в Москве оптом, мы приняли решение начать развитие оптовых продаж в данном направлении.
+                </p>
+            </div>
+            <div class="benefits__line"></div>
+            <div class="benefits__qualities">
+                <div class="benefits__quality">
+                    <div class="benefits__qualityImg"><img src="/image/benefits/garant_price.svg" alt="Гарантия лучшей цены"></div>
+                    <div class="benefits__qualityContainer">
+                        <h4 class="benefits__qualityHeader">Гарантия лучшей цены</h4>
+                        <p class="benefits__qualityText">Мы предлагаем лучшее соотношение цены и качества</p>
+                    </div>
+                </div>
+                <div class="benefits__quality">
+                    <div class="benefits__qualityImg"><img src="/image/benefits/sertifice__product.svg" alt="Сертифицированная продукция"></div>
+                    <div class="benefits__qualityContainer">
+                        <h4 class="benefits__qualityHeader">Сертифицированная продукция</h4>
+                        <p class="benefits__qualityText">Продукция имеет все ГОСТы  и сертификаты соответствия</p>
+                    </div>
+                </div>
+                <div class="benefits__quality">
+                    <div class="benefits__qualityImg"><img src="/image/benefits/money_bag.svg" alt="Бесплатная доставка"></div>
+                    <div class="benefits__qualityContainer">
+                        <h4 class="benefits__qualityHeader">Бесплатная доставка</h4>
+                        <p class="benefits__qualityText">При заказе от 25 000 ₽ доставка по России — бесплатная</p>
+                    </div>
+                </div>
+                <div class="benefits__quality">
+                    <div class="benefits__qualityImg"><img src="/image/benefits/matrice.svg" alt="Ассортиментная матрица"></div>
+                    <div class="benefits__qualityContainer">
+                        <h4 class="benefits__qualityHeader">Ассортиментная матрица</h4>
+                        <p class="benefits__qualityText">Мы поможем сформировать продающую матрицу для магазина</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-banner">
+            <div class="footer-banner__description">
+                <h3 class="footer-banner__header">
+                    Выкладываем обзоры на свою продукцию в телеграм канале
+                </h3>
+                <button class="footer-banner__button">Перейти в канал</button>
+            </div>
+            <div class="footer-banner__container">
+                <div class="footer-banner__source">
+                    <img src="image/telegram.svg" alt="Телеграм">
+                </div>
+                <div class="footer-banner__logo">
+                    <img src="image/telephone.svg" alt="Лого">
+                </div>
+            </div>
+        </section>
+        <div class="footer-banner__line"></div>
+        <section class="footer-info">
+            <div class="footer-info__info">
+                <img src="image/logoNew.svg" alt="Логотип" class="footer-info__logo">
+                <div class="footer-info__phone"><a href="tel:89999999999">8 (999) 999-99-99</a></div>
+                <p class="footer-info__email"><a href="mailto:info@mail.ru">info@lmail.ru</a></p>
+            </div>
+            <div class="footer-info__blockInfo">
+                <ul class="footer-info__catalog">
+                    <li class="footer-info__header">Каталог</li>
+                    <li class="footer-info__text">Бренды</li>
+                    <li class="footer-info__text">Чехлы</li>
+                    <li class="footer-info__text">Стекла и пленки</li>
+                    <li class="footer-info__text">Гаджеты</li>
+                    <li class="footer-info__text">Кабели и ЗУ</li>
+                    <li class="footer-info__text">Аксессуары</li>
+                </ul>
+                <ul class="footer-info__shopper">
+                    <li class="footer-info__header">Покупателям</li>
+                    <li class="footer-info__text">Частые вопросы</li>
+                    <li class="footer-info__text">База знаний</li>
+                    <li class="footer-info__text">Обмен товара</li>
+                    <li class="footer-info__text">Обзоры на Youtube</li>
+                </ul>
+                <ul class="footer-info__quikLink">
+                    <li class="footer-info__header">Быстрые ссылки</li>
+                    <li class="footer-info__text">Франшиза</li>
+                    <li class="footer-info__text">1С решения</li>
+                    <li class="footer-info__text">Готовые решения</li>
+                    <li class="footer-info__text">Плоттер</li>
+                </ul>
+                <ul class="footer-info__company">
+                    <li class="footer-info__header">О компании</li>
+                    <li class="footer-info__text">О нас</li>
+                    <li class="footer-info__text">Доставка</li>
+                    <li class="footer-info__text">Оплата</li>
+                    <li class="footer-info__text">Системы скидок</li>
+                </ul>
+            </div>
+            <div class="footer-info__socialInfo">
+                <h5 class="footer-info__socialHeader">Мы на Youtube и Telegram</h5>
+                <p class="footer-info__description">Подпишитесь, чтобы не пропускать обновления</p>
+                <div class="footer-info__buttonTelegram">
+                    <img src="image/telegram-footer.svg" alt="Телеграм">
+                    <a href="#">Telegram</a>
+                </div>
+                <div class="footer-info__buttonYoutube">
+                    <img src="image/youtube-footer.svg" alt="Youtube">
+                    <a href="#">Youtube</a>
+                </div>
+            </div>
+        </section>
+        <div class="footer-banner__line"></div>
+        <section class="footer-moreInformation">
+            <span class="footer-moreInformation__year">© 2014—2021</span>
+            <div class="footer-moreInformation__privacyPolicy">
+                <p class="footer-moreInformation__text">Политика конфиденциальности</p>
+                <p class="footer-moreInformation__personalData">Политика персональных данных</p>
+            </div>
+            <div class="footer-moreInformation__done">
+                <p class="footer-moreInformation__company">Сделано by VICTORIA</p>
+            </div>
+        </section>
+    </footer>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/range-slider.js"></script>
+    <script src="js/dropdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.main {
+    background: #F6F8FC;
+    &__container {
+        display: flex;
+        align-items: baseline;
+        margin: 0 auto;
+        margin-bottom: 120px;
+    }
+}
