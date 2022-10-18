@@ -4,6 +4,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 18px;
         max-width: 100%;
     }
 
@@ -15,23 +16,7 @@
         border-radius: 20px;
         padding: 16px 0 0 20px;
         overflow: hidden;
-        &:not(:last-child) {
-            margin-right: 18px;
-        }
-        &:nth-child(1) {
-            margin-bottom: 18px;
-        }
-        &:nth-child(2) {
-            margin-bottom: 18px;
-        }
-        &:nth-child(3) {
-            margin-bottom: 18px;
-        }
-        &:nth-child(4) {
-            margin-bottom: 18px;
-        }
         &:nth-child(5) {
-            margin-bottom: 18px;
             overflow: hidden;
         }
         &:hover, :focus {
@@ -53,23 +38,13 @@
         margin-top: 9px;
     }
 
-    @media screen and (max-width: 1458px) {
-        .card-category {
-            &__container {
-                // max-width: calc(200% / 3);
-                justify-content: flex-start;
-            }
+}
 
-            &__item {
-                &:nth-child(9) {
-                    margin-top: 18px;
-                }
-
-                &:nth-child(10) {
-                    margin-top: 18px;
-                }
-            }
+@media screen and (max-width: 975px) {
+    .card-category {
+        &__container {
+            justify-content: space-around;
+            gap: 10px;
         }
     }
-
 }

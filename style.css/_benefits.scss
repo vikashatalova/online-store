@@ -17,25 +17,25 @@
     &__description {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         flex-direction: row;
         margin-bottom: 40px;
     }
 
     &__textOne {
         font-weight: 400;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 29px;
         color: #333333;
-        width: 608px;
-        margin-right: 127px;
+        max-width: 608px;
     }
 
     &__textTwo {
         font-weight: 400;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 29px;
         color: #333333;
-        width: 708px;
+        max-width: 708px;
     }
 
     &__line {
@@ -55,20 +55,20 @@
     &__qualityHeader {
         margin-bottom: 12px;
         font-weight: 500;
-        font-size:17px;
+        font-size: 20px;
         line-height: 21px;
         color: #414141;
     }
 
     &__qualityText {
         font-weight: 400;
-        font-size: 15px;
-        line-height: 26px;
+        font-size: 17px;
+        line-height: 20px;
         color: #65676E;
     }
 
     &__qualityContainer {
-        width: 337px;
+        max-width: 337px;
     }
 
     @media screen and (max-width: 1500px) {
