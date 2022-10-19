@@ -49,6 +49,7 @@
     }
 
     &__text {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -63,7 +64,7 @@
             content: '';
             z-index: 1;
             position: absolute;
-            right: 5px;
+            right: -15px;
             border: solid #AB83FE;
             border-width: 0 2px 2px 0;
             border-radius: 1px;
@@ -72,5 +73,29 @@
             transform: rotate(314deg);
         }
     }
+}
 
+@media screen and (max-width: 940px) {
+    .pagination {
+        // justify-content: space-around;
+
+        &__button {
+            padding: 7px 10px;
+            width: 155px;
+            height: 40px;
+            font-size: 13px;
+        }
+
+        &__pageItem {
+            font-size: 12px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
 }

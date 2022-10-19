@@ -50,19 +50,31 @@ body {
 
 @media screen and (max-width: 1100px) {
     .container {
-        max-width: 1000px;
+        max-width: 990px;
     }
 }
 
 @media screen and (max-width: 1028px) {
     .container {
-        max-width: 980px;
+        max-width: 960px;
     }
 }
 
 @media screen and (max-width: 980px) {
     .container {
-        max-width: 950px;
+        max-width: 930px;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .container {
+        max-width: 870px;
     }
 }
 
@@ -98,7 +110,7 @@ body {
 
 @media screen and (max-width: 463px) {
     .container {
-        max-width: 400px;
+        max-width: 440px;
     }
 }
 
@@ -110,7 +122,7 @@ body {
 
 @media screen and (max-width: 375px) {
     .container {
-        max-width: 120px;
+        max-width: 310px;
     }
 }
 

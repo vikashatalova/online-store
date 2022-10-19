@@ -64,6 +64,7 @@
 
     &__img {
         margin-bottom: 20px;
+        max-width: 100%;
     }
 
 
@@ -130,11 +131,123 @@
             color: $primary-color;
         }
     }
+}
 
-    @media screen and (max-width: 1457px) {
-        .card-products {
-            &__container {
-                justify-content: space-around;
+@media screen and (max-width: 1500px) {
+    .card-products {
+        &__container {
+            justify-content: flex-start;
+            gap: 20px 15px;
+        }
+
+        &__product {
+            max-width: 280px;
+        }
+
+        &__img {
+            max-width: 80%;
+        }
+
+        &__saleRed {
+            img {
+                left: -158px;
+            }
+            &::before {
+                left: -142px;
+            }
+        }
+
+        &__saleGreen {
+            img {
+                left: -158px; 
+            }
+            &::before {
+                left: -155px;
+            }
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        &__price {
+            font-size: 22px;
+        }
+
+        &__priceOff {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1401px) {
+    &__product {
+        max-width: 270px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .card-products {
+        &__container {
+            gap: 20px 20px;
+        }
+
+        &__product {
+            max-width: 250px;
+            height: 350px;
+        }
+
+        &__img {
+            max-width: 70%;
+        }
+
+        &__saleRed {
+            img {
+                left: -139px;
+            }
+            &::before {
+                left: -123px;
+            }
+        }
+
+        &__saleGreen {
+            img {
+                left: -135px; 
+            }
+            &::before {
+                left: -132px;
+            }
+        }
+
+        &__text {
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+        &__price {
+            font-size: 20px;
+        }
+
+        &__priceOff {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &__saleRedRadius {
+            width: 32px;
+            height: 32px;
+            &::before {
+                font-size: 10px;
+            }
+        }
+
+        &__saleGreenRadius {
+            width: 32px;
+            height: 32px;
+            left: 47px;
+            &::before {
+                font-size: 10px;
             }
         }
     }
