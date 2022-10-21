@@ -29,10 +29,11 @@
 
     &__figure2 {
         position: relative;
-        right: 70px;
-        top: -120px;
+        
         img {
             position: absolute;
+            right: -105px;
+            top: -120px;
         }
     }
 
@@ -59,7 +60,21 @@
 
 @media screen and (max-width: 1500px) {
     .card-banner {
-        max-width: 1060px;
+        max-width: 880px;
+
+        &__figure {
+            img {
+                width: 95px;
+            }
+        }
+
+        &__figure2 {
+            img {
+                width: 120px;
+                right: -70px;
+                top: -100px;
+            }
+        }
 
         &__description {
             margin-right: 50;
@@ -70,10 +85,6 @@
 @media screen and (max-width: 1490px) {
     .card-banner {
         max-width: 890px;
-
-        // &__figure {
-        //     left: 280px;
-        // }
 
         &__header {
             font-size: 30px;
@@ -90,7 +101,9 @@
         }
 
         &__figure2 {
-            right: 100px;
+            img {
+                right: -70px;
+            }
         }
 
         &__header {
@@ -99,7 +112,7 @@
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1190px) {
     .card-banner {
         max-width: 680px;
 
@@ -107,6 +120,12 @@
             font-size: 20px;
             line-height: 22px;
             margin-bottom: 5px;
+        }
+
+        &__figure2 {
+            img {
+                right: -50px;
+            }
         }
     }
 }
@@ -124,9 +143,9 @@
         }
 
         &__figure2 {
-            right: 60px;
-            top: -77px;
             img {
+                right: -35px;
+                top: -77px;
                 width: 100px;
             }
         }

@@ -1312,9 +1312,9 @@ input, textarea {
 
 @media screen and (max-width: 1500px) {
   .card-products__container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px 15px;
   }
   .card-products__product {
@@ -1336,20 +1336,62 @@ input, textarea {
     left: -155px;
   }
   .card-products__text {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 18px;
   }
   .card-products__price {
-    font-size: 22px;
+    font-size: 20px;
   }
   .card-products__priceOff {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 1401px) {
-  __product {
+@media screen and (max-width: 1395px) {
+  .card-products__product {
     max-width: 270px;
+    height: 365px;
+  }
+  .card-products__saleRed::before {
+    left: -128px;
+  }
+  .card-products__saleRed img {
+    left: -145px;
+  }
+  .card-products__saleGreen::before {
+    left: -138px;
+  }
+  .card-products__saleGreen img {
+    left: -145px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .card-products__product {
+    max-width: 222px;
+    height: 310px;
+  }
+  .card-products__saleRed::before {
+    left: -105px;
+  }
+  .card-products__saleRed img {
+    left: -123px;
+  }
+  .card-products__saleGreen::before {
+    left: -115px;
+  }
+  .card-products__saleGreen img {
+    left: -123px;
+  }
+  .card-products__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .card-products__price {
+    font-size: 18px;
+  }
+  .card-products__priceOff {
+    font-size: 12px;
   }
 }
 
@@ -1404,6 +1446,35 @@ input, textarea {
   }
 }
 
+@media screen and (max-width: 936px) {
+  .card-products__product {
+    max-width: 200px;
+    height: 250px;
+  }
+  .card-products__saleRed::before {
+    left: -95px;
+  }
+  .card-products__saleRed img {
+    left: -111px;
+  }
+  .card-products__saleGreen::before {
+    left: -105px;
+  }
+  .card-products__saleGreen img {
+    left: -111px;
+  }
+  .card-products__img {
+    max-width: 50%;
+  }
+  .card-products__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .card-products_-price {
+    font-size: 16px;
+  }
+}
+
 .card-banner {
   border-radius: 12px;
   display: -webkit-box;
@@ -1440,12 +1511,12 @@ input, textarea {
 
 .card-banner__figure2 {
   position: relative;
-  right: 70px;
-  top: -120px;
 }
 
 .card-banner__figure2 img {
   position: absolute;
+  right: -105px;
+  top: -120px;
 }
 
 .card-banner__header {
@@ -1469,7 +1540,15 @@ input, textarea {
 
 @media screen and (max-width: 1500px) {
   .card-banner {
-    max-width: 1060px;
+    max-width: 880px;
+  }
+  .card-banner__figure img {
+    width: 95px;
+  }
+  .card-banner__figure2 img {
+    width: 120px;
+    right: -70px;
+    top: -100px;
   }
   .card-banner__description {
     margin-right: 50;
@@ -1492,15 +1571,15 @@ input, textarea {
   .card-banner__description {
     margin-right: 85px;
   }
-  .card-banner__figure2 {
-    right: 100px;
+  .card-banner__figure2 img {
+    right: -70px;
   }
   .card-banner__header {
     font-size: 24px;
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1190px) {
   .card-banner {
     max-width: 680px;
   }
@@ -1508,6 +1587,9 @@ input, textarea {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 5px;
+  }
+  .card-banner__figure2 img {
+    right: -50px;
   }
 }
 
@@ -1521,11 +1603,9 @@ input, textarea {
   .card-banner__figure img {
     width: 75px;
   }
-  .card-banner__figure2 {
-    right: 60px;
-    top: -77px;
-  }
   .card-banner__figure2 img {
+    right: -35px;
+    top: -77px;
     width: 100px;
   }
   .card-banner__header {
@@ -1651,6 +1731,16 @@ input, textarea {
   padding: 3px;
   -webkit-transform: rotate(314deg);
           transform: rotate(314deg);
+}
+
+@media screen and (max-width: 1388px) {
+  .pagination__button {
+    font-size: 16px;
+    line-height: 18px;
+    width: 200px;
+    height: 50px;
+    padding: 10px 22px;
+  }
 }
 
 @media screen and (max-width: 940px) {
