@@ -1,7 +1,9 @@
 .product-list {
     margin-right: 30px;
+    position: relative;
 
     &__headers {
+        position: relative;
         display: flex;
         align-items: center;
         margin: 69px auto 33px auto;
@@ -68,7 +70,7 @@
     &__header {
         font-size: 35px;
         color: #414141;
-        margin-right: 8px;
+        margin: 0 8px 0 35px;
     }
 
     &__span {
@@ -175,8 +177,8 @@
             top: 43%;
             width: 7px;
             height: 7px;
-            border-top: 1.5px solid #90949A;
-            border-right: 1.5px solid #90949A;
+            border-top: 1.5px solid #5f5f60;
+            border-right: 1.5px solid #5f5f60;
             transform: rotate(-45deg);
         }
 

@@ -710,9 +710,11 @@ input, textarea {
 
 .product-list {
   margin-right: 30px;
+  position: relative;
 }
 
 .product-list__headers {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,7 +792,7 @@ input, textarea {
 .product-list__header {
   font-size: 35px;
   color: #414141;
-  margin-right: 8px;
+  margin: 0 8px 0 35px;
 }
 
 .product-list__span {
@@ -911,8 +913,8 @@ input, textarea {
   top: 43%;
   width: 7px;
   height: 7px;
-  border-top: 1.5px solid #90949A;
-  border-right: 1.5px solid #90949A;
+  border-top: 1.5px solid #5f5f60;
+  border-right: 1.5px solid #5f5f60;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -2175,5 +2177,77 @@ input, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.burger-menu {
+  position: absolute;
+}
+
+.burger-menu__button {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  z-index: 30;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(92.54deg, #AB83FE -16.66%, #66A6FF 90.71%);
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: -4px;
+}
+
+.burger-menu__lines::before {
+  content: '';
+  top: 4px;
+}
+
+.burger-menu_active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu_active .burger-menu__lines::after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.burger-menu_active .burger-menu__lines::before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.burger-menu_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  z-index: 10;
+}
+
+.burger-menu_active .burger-menu_overlay {
+  display: block;
+  background-color: #2a2a2a;
 }
 /*# sourceMappingURL=style.css.map */

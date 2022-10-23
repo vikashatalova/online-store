@@ -88,6 +88,11 @@
             </div>
         </section>
         <div class="product-list__headers container">
+            <div class="burger-menu burger-menu_active">
+                <a href="" class="burger-menu__button">
+                    <span class="burger-menu__lines"></span>
+                </a>
+            </div>
             <h1 class="product-list__header">Католог товаров</h1>
             <span class="product-list__span">(15 789)</span>
         </div>
@@ -95,54 +100,54 @@
             <section class="product-list container">
                 <div class="product-list__container">
                     <div class="product-list__list">
-                        <!-- <a href="#" class="product-list__arrow"><img src="/image/Group arrow.svg" alt="Стрелка вверх"></a> -->
                         <div class="product-list__arrow"></div>
                         <p class="product-list__description">Категории</p>
                     </div>
-                    <div class="product-list__search">
-                        <input class="product-list__searchInput" type="text" name="search" placeholder="Поиск">
-                        <a href="#" class="product-list__iconSearch"><img src="/image/searchInput.svg" alt="Поиск"></a>
+                    <div class="product-list__overlay">
+                        <div class="product-list__search">
+                            <input class="product-list__searchInput" type="text" name="search" placeholder="Поиск">
+                            <a href="#" class="product-list__iconSearch"><img src="/image/searchInput.svg" alt="Поиск"></a>
+                        </div>
+                        <ul class="product-list__category">
+                            <li class="product-list__category-item">Чехлы <span class="product-list__decoration">(4 789)</span></li>
+                            <li class="product-list__category-item">Стекла и пленки <span class="product-list__decoration">(3 345)</span></li>
+                            <li class="product-list__category-item">Гаджеты <span class="product-list__decoration">(12 443)</span></li>
+                            <li class="product-list__category-item">Кабели и ЗУ <span class="product-list__decoration">(1 232)</span></li>
+                            <li class="product-list__category-item">Макеты телефонов <span class="product-list__decoration">(300)</span></li>
+                            <li class="product-list__category-item">Наушники <span class="product-list__decoration">(3 432)</span></li>
+                            <li class="product-list__category-item">Power Bank <span class="product-list__decoration">(432)</span></li>
+                            <li class="product-list__category-item">Ремешки <span class="product-list__decoration">(432)</span></li>
+                            <li class="product-list__category-item">Тренды <span class="product-list__decoration">(215)</span></li>
+                            <li class="product-list__category-item">Аксессуары <span class="product-list__decoration">(124)</span></li>
+                        </ul>
                     </div>
-                    <ul class="product-list__category">
-                        <li class="product-list__category-item">Чехлы <span class="product-list__decoration">(4 789)</span></li>
-                        <li class="product-list__category-item">Стекла и пленки <span class="product-list__decoration">(3 345)</span></li>
-                        <li class="product-list__category-item">Гаджеты <span class="product-list__decoration">(12 443)</span></li>
-                        <li class="product-list__category-item">Кабели и ЗУ <span class="product-list__decoration">(1 232)</span></li>
-                        <li class="product-list__category-item">Макеты телефонов <span class="product-list__decoration">(300)</span></li>
-                        <li class="product-list__category-item">Наушники <span class="product-list__decoration">(3 432)</span></li>
-                        <li class="product-list__category-item">Power Bank <span class="product-list__decoration">(432)</span></li>
-                        <li class="product-list__category-item">Ремешки <span class="product-list__decoration">(432)</span></li>
-                        <li class="product-list__category-item">Тренды <span class="product-list__decoration">(215)</span></li>
-                        <li class="product-list__category-item">Аксессуары <span class="product-list__decoration">(124)</span></li>
-                    </ul>
                     <div class="product-list__borderButton border"></div>
                     <div class="product-list__price">
                         <div class="product-list__model">
-                            <!-- <a href="#" class="product-list__arrow"><img src="/image/Group arrow.svg" alt="Стрелка вверх"></a> -->
                             <div class="product-list__arrow"></div>
                             <p class="product-list__title">Цена, ₽</p>
                         </div>
-                        <div class="product-list__inputs">
-                            <label class="product-list__label">
-                                <span class="product-list__text">От</span>
-                                <input type="number" min="124" max="20000" placeholder="124" class="product-list__input" id="input-0">
-                            </label>
-                            <label class="product-list__label"> 
-                                <span class="product-list__text">До</span>
-                                <input type="number" min="124" max="20000" placeholder="20000" class="product-list__input inputNumber" id="input-1">
-                            </label>
+                        <div class="product-list__hidden">
+                            <div class="product-list__inputs">
+                                <label class="product-list__label">
+                                    <span class="product-list__text">От</span>
+                                    <input type="number" min="124" max="20000" placeholder="124" class="product-list__input" id="input-0">
+                                </label>
+                                <label class="product-list__label"> 
+                                    <span class="product-list__text">До</span>
+                                    <input type="number" min="124" max="20000" placeholder="20000" class="product-list__input inputNumber" id="input-1">
+                                </label>
+                            </div>
+                            <div class="product-list__slider" id="range-slider"></div>
                         </div>
-                        <div class="product-list__slider" id="range-slider"></div>
                     </div>
                     <div class="product-list__borderButton border"></div>
                     <div class="product-list__model">
-                        <!-- <a href="#" class="product-list__arrow"><img src="/image/Group arrow.svg" alt="Стрелка вверх"></a> -->
                         <div class="product-list__arrow"></div>
                         <p class="product-list__title">Модель</p>
                     </div>
                     <div class="product-list__borderButton border"></div>
                     <div class="product-list__model">
-                        <!-- <a href="#" class="product-list__arrow"><img src="/image/Group arrow.svg" alt="Стрелка вверх"></a> -->
                         <div class="product-list__arrow"></div>
                         <p class="product-list__title">Производитель</p>
                     </div>
@@ -472,5 +477,6 @@
     <script src="js/nouislider.min.js"></script>
     <script src="js/range-slider.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/burger-menu.js"></script>
 </body>
 </html>
