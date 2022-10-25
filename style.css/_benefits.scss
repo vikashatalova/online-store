@@ -70,10 +70,41 @@
     &__qualityContainer {
         max-width: 337px;
     }
+}
 
-    @media screen and (max-width: 1500px) {
-        .benefits {
-            padding: 21px 0;
+@media screen and (max-width: 1500px) {
+    .benefits {
+        padding: 21px 0;
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    .benefits {
+        &__header {
+            font-size: 26px;
+            line-height: 36px;
+        }
+
+        &__textOne {
+            font-size: 16px;
+        }
+
+        &__textTwo {
+            font-size: 16px;
+        }
+
+        &__qualityContainer {
+            max-width: 500px;
+        }
+
+        &__qualityHeader {
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+        &__qualityText {
+            font-size: 14px;
+            line-height: 16px;
         }
     }
 }

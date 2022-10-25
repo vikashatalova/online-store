@@ -136,7 +136,6 @@
 @media screen and (max-width: 1500px) {
     .card-products {
         &__container {
-            // justify-content: flex-start;
             justify-content: center;
             gap: 20px 15px;
         }
@@ -151,19 +150,23 @@
 
         &__saleRed {
             img {
-                left: -158px;
+                // left: -158px;
+                left: -151px;
             }
             &::before {
-                left: -142px;
+                // left: -142px;
+                left: -135px;
             }
         }
 
         &__saleGreen {
             img {
-                left: -158px; 
+                // left: -158px; 
+                left: -151px;
             }
             &::before {
-                left: -155px;
+                // left: -155px;
+                left: -148px;
             }
         }
         &__text {
@@ -181,62 +184,9 @@
     }
 }
 
-@media screen and (max-width: 1395px) {
-    .card-products {
-        &__product {
-            max-width: 270px;
-            height: 365px;
-        }
-
-        &__saleRed {
-            &::before {
-                left: -128px;
-            }
-
-            img {
-                left: -145px;
-            }
-        }
-
-        &__saleGreen {
-            &::before {
-                left: -138px;
-            }
-
-            img {
-                left: -145px;
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 1250px) {
     .card-products {
-        &__product {
-            max-width: 222px;
-            height: 310px;
-        }
-
-        &__saleRed {
-            &::before {
-                left: -105px;
-            }
-
-            img {
-                left: -123px;
-            }
-        }
-
-        &__saleGreen {
-            &::before {
-                left: -115px;
-            }
-
-            img {
-                left: -123px;
-            }
-        }
-
         &__text {
             font-size: 16px;
             line-height: 18px;
@@ -258,31 +208,8 @@
             gap: 20px 20px;
         }
 
-        &__product {
-            max-width: 250px;
-            height: 350px;
-        }
-
         &__img {
             max-width: 70%;
-        }
-
-        &__saleRed {
-            img {
-                left: -139px;
-            }
-            &::before {
-                left: -123px;
-            }
-        }
-
-        &__saleGreen {
-            img {
-                left: -135px; 
-            }
-            &::before {
-                left: -132px;
-            }
         }
 
         &__text {
@@ -320,42 +247,12 @@
 
 @media screen and (max-width: 936px) {
     .card-products {
-        
-        &__product {
-            max-width: 200px;
-            height: 250px;
-        }
-
-        &__saleRed {
-            &::before {
-                left: -95px;
-            }
-
-            img {
-                left: -111px;
-            }
-        }
-
-        &__saleGreen {
-            &::before {
-                left: -105px;
-            }
-
-            img {
-                left: -111px;
-            }
-        }
-
-        &__img {
-            max-width: 50%;
-        }
-
         &__text {
             font-size: 14px;
             line-height: 16px;
         }
 
-        &_-price {
+        &__price {
             font-size: 16px;
         }
     }

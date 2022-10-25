@@ -153,22 +153,6 @@
 
 @media screen and (max-width: 1100px) {
     .footer-info {
-
-        &__catalog {
-            margin-right: 35px;
-        }
-        &__shopper {
-            margin-right: 35px;
-        }
-
-        &__quikLink {
-            margin-right: 35px;
-        }
-
-        &__company{
-            margin-right: 35px;
-        }
-
         &__header {
             a {
                 font-size: 17px;
@@ -193,6 +177,86 @@
                 font-size: 14px;
                 line-height: 18px;
             }
+        }
+
+        &__catalog {
+            margin-right: 35px;
+        }
+        &__shopper {
+            margin-right: 35px;
+        }
+
+        &__quikLink {
+            margin-right: 35px;
+        }
+
+        &__company{
+            margin-right: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .footer-info {
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+        
+        &__phone {
+            a {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        &__email {
+            a {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        &__catalog {
+            margin-right: 20px;
+        }
+
+        &__shopper {
+            margin-right: 20px;
+        }
+
+        &__quikLink {
+            margin-right: 20px;
+        }
+
+        &__company{
+            margin-right: auto;
+        }
+
+        &__header {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__socialHeader {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__description {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        &__buttonTelegram {
+            width: 200px;
+            height: 38px;
+        }
+
+        &__buttonYoutube {
+            width: 200px;
+            height: 38px;
         }
     }
 }

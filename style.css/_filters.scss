@@ -112,29 +112,13 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1457px) {
+@media screen and (max-width: 1040px) {
     .filters {
-        &__dropdowm {
-            margin-right: 700px;
+        &__selected {
+            width: 160px;
+            height: 39px;
+            font-size: 12px;
         }
-
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .filters {
-        &__dropdowm {
-            margin-right: 600px;
-        }
-
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .filters {
-        &__dropdowm {
-            margin-right: 500px;
-        }
-
-    }
-}

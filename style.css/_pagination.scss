@@ -75,6 +75,7 @@
     }
 }
 
+
 @media screen and (max-width: 1388px) {
     .pagination {
         &__button {
@@ -87,10 +88,26 @@
     }
 }
 
+@media screen and (max-width: 1010px) {
+    .pagination {
+        &__button {
+            font-size: 14px;
+            line-height: 16px;
+            width: 170px;
+            height: 45px;
+        }
+        &__pageItem {
+            font-size: 15px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
+
 @media screen and (max-width: 940px) {
     .pagination {
-        // justify-content: space-around;
-
         &__button {
             padding: 7px 10px;
             width: 155px;
