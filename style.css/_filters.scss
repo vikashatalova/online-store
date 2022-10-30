@@ -118,6 +118,11 @@
             width: 160px;
             height: 39px;
             font-size: 12px;
+            padding: 12.5px 0;
+        }
+
+        &__caret {
+            left: 135px;
         }
     }
 }

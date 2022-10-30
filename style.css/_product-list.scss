@@ -225,9 +225,6 @@
         &__searchInput {
             width: 300px;
         }
-        &__iconSearch {
-            right: 55px;
-        }
         &__category-item {
             font-size: 14px;
         }
@@ -253,6 +250,17 @@
         }
         &__buttonReset {
             font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-list {
+        &__inputs {
+            justify-content: flex-start;
+        }
+        &__label {
+            width: 120px;
         }
     }
 }

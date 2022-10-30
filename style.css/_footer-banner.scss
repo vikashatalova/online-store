@@ -54,3 +54,28 @@
         border-bottom: 0.5px solid #90949A;
     }
 }
+
+@media screen and (max-width: 936px) {
+    .footer-banner {
+        &__header {
+            width: 435px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .footer-banner {
+        &__logo {
+            right: 55px;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .footer-banner {
+        &__logo {
+            right: 0;
+        }
+    }
+}

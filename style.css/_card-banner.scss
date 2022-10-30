@@ -181,3 +181,20 @@
         }
     }
 }
+
+@media screen and (max-width: 842px) {
+    .card-banner {
+        &__figure {
+            img {
+                width: 50px;
+            }
+        }
+
+        &__figure2 {
+            img {
+                width: 70px;
+                top: -55px;
+            }
+        }
+    }
+}

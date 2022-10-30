@@ -260,3 +260,18 @@
         }
     }
 }
+
+@media screen and (max-width: 936px) {
+    .footer-info {
+        &__socialInfo {
+            max-width: 220px;
+            height: 210px;
+        }
+        &__buttonTelegram {
+            width: 180px;
+        }
+        &__buttonYoutube {
+            width: 180px;
+        }
+    }
+}
