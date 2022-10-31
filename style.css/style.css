@@ -1880,7 +1880,7 @@ input, textarea {
 .benefits__qualityHeader {
   height: 30px;
   max-width: 337px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 20px;
   color: #414141;
@@ -2013,10 +2013,10 @@ input, textarea {
   border-bottom: 0.5px solid #90949A;
 }
 
-@media screen and (max-width: 936px) {
+@media screen and (max-width: 940px) {
   .footer-banner__header {
-    width: 435px;
-    font-size: 20px;
+    width: 490px;
+    font-size: 22px;
   }
 }
 
@@ -2300,16 +2300,24 @@ input, textarea {
   }
 }
 
-@media screen and (max-width: 936px) {
+@media screen and (max-width: 940px) {
+  .footer-info__header {
+    font-size: 12px;
+  }
+  .footer-info__text {
+    font-size: 12px;
+  }
   .footer-info__socialInfo {
-    max-width: 220px;
-    height: 210px;
+    max-width: 200px;
+  }
+  .footer-info__socialHeader {
+    font-size: 12px;
   }
   .footer-info__buttonTelegram {
-    width: 180px;
+    width: 150px;
   }
   .footer-info__buttonYoutube {
-    width: 180px;
+    width: 150px;
   }
 }
 
@@ -2348,6 +2356,12 @@ input, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 940px) {
+  .footer-moreInformation {
+    font-size: 12px;
+  }
 }
 
 .burger-menu {

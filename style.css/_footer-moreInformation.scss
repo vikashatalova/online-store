@@ -24,6 +24,10 @@
     &__done {
         display: flex;
     }
+}
 
-
+@media screen and (max-width: 940px) {
+    .footer-moreInformation {
+        font-size: 12px;
+    }
 }
