@@ -54,6 +54,9 @@
 
     &__qualityImg {
         margin-bottom: 20px;
+        img {
+            filter: drop-shadow(8px 7px 12px rgba(120, 189, 238, 0.5));
+        }
     }
 
     &__qualityHeader {
@@ -105,11 +108,15 @@
         &__qualityHeader {
             font-size: 17px;
             line-height: 20px;
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
         }
 
         &__qualityText {
             font-size: 14px;
             line-height: 16px;
+            word-break: break-word;
         }
     }
 }
@@ -130,14 +137,36 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 660px) {
     .benefits {
+        &__description {
+            flex-wrap: wrap;
+        }
+        &__qualities {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__quality {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        &__qualityImg {
+            margin-right: 20px;
+        }
+
         &__qualityHeader {
-            font-size: 15px;
+            font-size: 20px;
+            margin-bottom: 15px;
+            &:not(:last-child) {
+                margin-right: auto;
+            }
         }
 
         &__qualityText {
-            font-size: 12px;
+            font-size: 17px;
         }
     }
 }

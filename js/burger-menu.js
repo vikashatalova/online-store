@@ -21,12 +21,3 @@ productListArrow.addEventListener('click', (e) => {
         productListOverlay.style.display = 'none'
     }
 });
-
-// productListArrow.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     if (productListHidden.style.display === 'none') {
-//         productListHidden.style.display = 'block'
-//     } else {
-//         productListHidden.style.display = 'none'
-//     }
-// })

@@ -79,3 +79,17 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    .footer-banner {
+        &__header {
+            width: 370px;
+            font-size: 18px;
+        }
+
+        &__button {
+            width: 210px;
+            font-size: 14px;
+        }
+    }
+}

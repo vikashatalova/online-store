@@ -86,3 +86,11 @@
         }
     }
 }
+
+@media screen and (max-width: 730px) {
+    .card-category {
+        &__container {
+            column-gap: 25px;
+        }
+    }
+}

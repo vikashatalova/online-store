@@ -254,6 +254,14 @@
     }
 }
 
+@media screen and (max-width: 730px) {
+    .product-list {
+        &__container {
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width: 900px) {
     .product-list {
         &__inputs {

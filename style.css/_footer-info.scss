@@ -80,6 +80,7 @@
         height: 223px;
         background: rgba(43, 60, 103, 0.2);
         border-radius: 12px;
+        box-shadow: -7px -7px 42px 18px rgba(120, 189, 238, 0.2);
     }
 
     &__socialHeader {
@@ -147,7 +148,6 @@
 @media screen and (max-width: 1500px) {
     .footer-info {
         padding: 50px 0 80px 0;
-        // font-size: 13px;
     }
 }
 
@@ -285,6 +285,69 @@
         
         &__buttonYoutube {
             width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+
+        &__info {
+            flex-direction: row;
+            justify-content: space-around;
+            width: 510px;
+        }
+
+        &__phone {
+            a {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        &__email {
+            a {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        &__blockInfo {
+            margin-bottom: 30px;
+        }
+
+        &__header {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__socialInfo {
+            max-width: 276px;
+        }
+
+        &__socialHeader {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        &__description {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        &__buttonTelegram {
+            width: 236px;
+        }
+
+        &__buttonYoutube {
+            width: 236px;
         }
     }
 }

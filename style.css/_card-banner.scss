@@ -133,7 +133,6 @@
 
 @media screen and (max-width: 1100px) {
     .card-banner {
-        // max-width: 500px;
 
         &__figure {
             left: -77px;
@@ -144,8 +143,8 @@
 
         &__figure2 {
             img {
-                right: -35px;
-                top: -77px;
+                right: -43px;
+                top: -88px;
                 width: 100px;
             }
         }
@@ -165,36 +164,15 @@
 
 @media screen and (max-width: 937px) {
     .card-banner {
-        max-width: 500px;
-        height: 130px;
+        max-width: 590px;
+        height: 165px;
 
         &__banner-img {
             max-width: 110%;
         }
 
-        &__figure {
-            left: -55px;
-        }
-
         &__description {
             margin-right: 20px;
-        }
-    }
-}
-
-@media screen and (max-width: 842px) {
-    .card-banner {
-        &__figure {
-            img {
-                width: 50px;
-            }
-        }
-
-        &__figure2 {
-            img {
-                width: 70px;
-                top: -55px;
-            }
         }
     }
 }
