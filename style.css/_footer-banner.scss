@@ -45,9 +45,6 @@
         right: 118px;
         overflow: hidden;
         height: 300px;
-        img {
-            box-shadow: -53px 14px 100px 17px rgba(20, 174, 255, 0.2);
-        }
     }
 
     &__line {
@@ -90,6 +87,121 @@
         &__button {
             width: 210px;
             font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer-banner {
+        &__header {
+            font-size: 14px;
+            width: 290px;
+        }
+
+        &__button {
+            width: 180px;
+            font-size: 12px;
+            padding: 12px 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footer-banner {
+        &__header {
+            font-size: 12px;
+            width: 250px;
+        }
+
+        &__button {
+            width: 150px;
+            font-size: 12px;
+            padding: 12px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer-banner {
+        &__description {
+            justify-content: flex-start;
+            margin-left: -60px;
+        }
+        &__header {
+            line-height: 14px;
+        }
+
+        &__button {
+            height: 40px;
+            padding: 7px 20px;
+        }
+
+        &__logo {
+            top: -68px;
+            right: -38px;
+            height: 241px;
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .footer-banner {
+        &__logo {
+            max-width: 400px;
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-banner {
+        &__header {
+            width: 150px;
+            line-height: 14px;
+        }
+
+        &__button {
+            height: 30px;
+            width: 120px;
+            font-size: 10px;
+            padding: 4px 10px;
+        }
+
+        &__logo {
+            height: 244px;
+        }
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .footer-banner {
+        &__logo {
+            right: -50px;
+        }
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .footer-banner {
+        padding: 20px 0;
+
+        &__logo {
+            height: 200px;
+            max-width: 300px;
+            right: 20px;
+            top: -64px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-banner {
+        &__logo {
+            right: -15px;
         }
     }
 }

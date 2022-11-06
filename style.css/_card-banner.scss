@@ -133,6 +133,9 @@
 
 @media screen and (max-width: 1100px) {
     .card-banner {
+        position: relative;
+        max-width: 590px;
+        height: 165px;
 
         &__figure {
             left: -77px;
@@ -143,7 +146,7 @@
 
         &__figure2 {
             img {
-                right: -43px;
+                right: -15px;
                 top: -88px;
                 width: 100px;
             }
@@ -164,8 +167,8 @@
 
 @media screen and (max-width: 937px) {
     .card-banner {
-        max-width: 590px;
-        height: 165px;
+        // max-width: 590px;
+        // height: 165px;
 
         &__banner-img {
             max-width: 110%;
