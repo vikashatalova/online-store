@@ -143,6 +143,10 @@
             color: $primary-color;
         }
     }
+
+    .active-footer {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -291,16 +295,22 @@
 
 @media screen and (max-width: 870px) {
     .footer-info {
+        padding: 30px 20px;
         flex-direction: column;
         align-items: center;
 
         &__info {
             flex-direction: row;
             justify-content: space-around;
-            width: 510px;
+            // width: 510px;
+        }
+
+        &__logo {
+            margin-right: 10px;
         }
 
         &__phone {
+            margin-right: 10px;
             a {
                 font-size: 14px;
                 line-height: 20px;
@@ -316,20 +326,34 @@
 
         &__blockInfo {
             margin-bottom: 30px;
+            // flex-direction: column;
         }
 
         &__header {
             font-size: 14px;
             line-height: 18px;
+            // &::after {
+            //     content: '';
+            //     display: inline-block;
+            //     position: absolute;
+            //     left: 35%;
+            //     top: 43%;
+            //     width: 7px;
+            //     height: 7px;
+            //     border-top: 1.5px solid #fff;
+            //     border-right: 1.5px solid #fff;
+            //     transform: rotate(-45deg);
+            // }
         }
 
         &__text {
             font-size: 14px;
             line-height: 18px;
+            display: none;
         }
 
         &__socialInfo {
-            max-width: 276px;
+            max-width: 335px;
         }
 
         &__socialHeader {
@@ -348,6 +372,29 @@
 
         &__buttonYoutube {
             width: 236px;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .footer-info {
+        align-items: flex-start;
+        &__info {
+            flex-direction: column;
+            margin: 0 0 10px 0;
+            align-items: flex-start;
+        }
+
+        &__logo {
+            margin: 0 0 10px 0;
+        }
+
+        &__blockInfo {
+            flex-direction: column;
+        }
+
+        &__socialInfo {
+            margin: 0 auto;
         }
     }
 }

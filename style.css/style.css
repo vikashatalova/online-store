@@ -275,6 +275,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1480px;
 }
@@ -943,7 +947,32 @@ input, textarea {
 
 @media screen and (max-width: 730px) {
   .product-list__container {
-    display: none;
+    position: absolute;
+    background: #0e2349cf;
+    z-index: 100;
+    top: -50px;
+    padding: 30px;
+    border-radius: 30px;
+    color: #fff;
+    left: -380px;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+  }
+  .product-list .active-menu {
+    left: 0;
+  }
+  .product-list__description {
+    color: #fff;
+  }
+  .product-list__input {
+    color: #fff;
+  }
+  .product-list__text {
+    color: #fff;
+  }
+  .product-list__arrow::before {
+    border-top: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
   }
 }
 
@@ -1586,11 +1615,22 @@ input, textarea {
 }
 
 @media screen and (max-width: 937px) {
+  .card-banner {
+    max-width: 590px;
+    height: 165px;
+  }
   .card-banner__banner-img {
     max-width: 110%;
   }
   .card-banner__description {
     margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .card-banner {
+    max-width: 335px;
+    height: 220px;
   }
 }
 
@@ -2285,6 +2325,10 @@ input, textarea {
   color: #fff;
 }
 
+.footer-info .active-footer {
+  display: block;
+}
+
 @media screen and (max-width: 1500px) {
   .footer-info {
     padding: 50px 0 80px 0;
@@ -2400,6 +2444,7 @@ input, textarea {
 
 @media screen and (max-width: 870px) {
   .footer-info {
+    padding: 30px 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2415,7 +2460,12 @@ input, textarea {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 510px;
+  }
+  .footer-info__logo {
+    margin-right: 10px;
+  }
+  .footer-info__phone {
+    margin-right: 10px;
   }
   .footer-info__phone a {
     font-size: 14px;
@@ -2435,9 +2485,10 @@ input, textarea {
   .footer-info__text {
     font-size: 14px;
     line-height: 18px;
+    display: none;
   }
   .footer-info__socialInfo {
-    max-width: 276px;
+    max-width: 335px;
   }
   .footer-info__socialHeader {
     font-size: 17px;
@@ -2452,6 +2503,36 @@ input, textarea {
   }
   .footer-info__buttonYoutube {
     width: 236px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .footer-info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer-info__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 10px 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer-info__logo {
+    margin: 0 0 10px 0;
+  }
+  .footer-info__blockInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-info__socialInfo {
+    margin: 0 auto;
   }
 }
 
@@ -2495,6 +2576,25 @@ input, textarea {
 @media screen and (max-width: 940px) {
   .footer-moreInformation {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .footer-moreInformation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px;
+  }
+  .footer-moreInformation__privacyPolicy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

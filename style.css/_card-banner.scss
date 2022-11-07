@@ -167,8 +167,8 @@
 
 @media screen and (max-width: 937px) {
     .card-banner {
-        // max-width: 590px;
-        // height: 165px;
+        max-width: 590px;
+        height: 165px;
 
         &__banner-img {
             max-width: 110%;
@@ -177,5 +177,12 @@
         &__description {
             margin-right: 20px;
         }
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .card-banner {
+        max-width: 335px;
+        height: 220px;
     }
 }

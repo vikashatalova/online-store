@@ -168,7 +168,7 @@
         height: 28px;
         border: 1px solid #E5E6E9;
         border-radius: 30px;
-        &::before { //при наведении стрелка должна быть белой
+        &::before { 
             content: "";
             display: inline-block;
             position: absolute;
@@ -256,8 +256,41 @@
 
 @media screen and (max-width: 730px) {
     .product-list {
+        
         &__container {
-            display: none;
+            position: absolute;
+            background: #0e2349cf;
+            z-index: 100;
+            top: -50px;
+            padding: 30px;
+            border-radius: 30px;
+            color: #fff;
+            left: -380px;
+            transition: left 0.3s ease 0s;
+            // overflow: auto;
+            // display: none;
+        }
+
+        .active-menu {
+            left: 0;
+            // overflow: auto;
+        }
+
+        &__description {
+            color: #fff;
+        }
+
+        &__input {
+            color: #fff;
+        }
+
+        &__text {
+            color: #fff;
+        }
+
+        &__arrow::before {
+            border-top: 1.5px solid #fff;
+            border-right: 1.5px solid #fff
         }
     }
 }
