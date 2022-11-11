@@ -78,7 +78,7 @@ body._lock {
 
 @media screen and (max-width: 900px) {
     .container {
-        max-width: 855px;
+        max-width: 845px;
     }
 }
 
@@ -108,31 +108,38 @@ body._lock {
 
 @media screen and (max-width: 600px) {
     .container {
-        max-width: 550px;
+        // max-width: 550px;
+        max-width: 515px;
     }
 }
 
 @media screen and (max-width: 565px) {
     .container {
-        max-width: 525px;
+        max-width: 500px;
     }
 }
 
 @media screen and (max-width: 533px) {
     .container {
-        max-width: 490px;
+        max-width: 460px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .container {
+        max-width: 400px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .container {
-        max-width: 380px;
+        max-width: 330px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .container {
-        max-width: 310px;
+        max-width: 250px;
     }
 }
 

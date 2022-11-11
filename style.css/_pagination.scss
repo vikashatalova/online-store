@@ -112,7 +112,7 @@
             padding: 7px 10px;
             width: 155px;
             height: 40px;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         &__pageItem {
@@ -125,6 +125,33 @@
         &__text {
             font-size: 14px;
             line-height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .pagination {
+        flex-direction: column-reverse;
+
+        &__button {
+            width: 335px;
+            height: 48px;
+        }
+
+        &__pages {
+            margin-bottom: 22px;
+            justify-content: space-between;
+        }
+
+        &__pageItem {
+            font-size: 14px;
+            &:not(:last-child) {
+                margin-right: 49px;
+            }
+        }
+
+        &__text {
+            display: none;
         }
     }
 }

@@ -189,13 +189,6 @@
                 width: 110%;
             }
         }
-
-        &__img {
-
-            img {
-                width: 110%;
-            }
-        }
     }
 }
 
@@ -204,6 +197,28 @@
     .banner {
         &__description {
             font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .banner {
+        &__img {
+            bottom: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .banner {
+        &__img {
+            bottom: 0;
+            img {
+                width: 115%;
+            }
         }
     }
 }

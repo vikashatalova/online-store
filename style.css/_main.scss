@@ -8,3 +8,11 @@
         margin-bottom: 120px;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .main {
+        &__container {
+            margin-bottom: 60px;
+        }
+    }
+}

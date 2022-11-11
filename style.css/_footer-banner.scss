@@ -138,7 +138,7 @@
 
         &__logo {
             top: -68px;
-            right: -38px;
+            right: 0;
             height: 241px;
 
             img {
@@ -148,14 +148,6 @@
     }
 }
 
-@media screen and (max-width: 530px) {
-    .footer-banner {
-        &__logo {
-            max-width: 400px;
-            right: 0;
-        }
-    }
-}
 
 @media screen and (max-width: 500px) {
     .footer-banner {
@@ -177,13 +169,6 @@
     }
 }
 
-@media screen and (max-width: 465px) {
-    .footer-banner {
-        &__logo {
-            right: -50px;
-        }
-    }
-}
 
 @media screen and (max-width: 457px) {
     .footer-banner {
@@ -192,16 +177,7 @@
         &__logo {
             height: 200px;
             max-width: 300px;
-            right: 20px;
             top: -64px;
-        }
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .footer-banner {
-        &__logo {
-            right: -15px;
         }
     }
 }
