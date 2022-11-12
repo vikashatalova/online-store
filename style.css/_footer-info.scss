@@ -151,7 +151,29 @@
 
 @media screen and (max-width: 1500px) {
     .footer-info {
-        padding: 50px 0 80px 0;
+        padding: 50px 20px 80px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .footer-info {
+        &__phone {
+            a {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        &__email {
+            a {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        &__catalog, &__shopper, &__quikLink, &__company {
+            margin-right: 20px;
+        }
     }
 }
 
@@ -164,38 +186,20 @@
             }
         }
 
+        &__phone {
+            a {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
         &__text {
             font-size: 14px;
             line-height: 18px;
         }
 
-        &__phone {
-            a {
-                font-size: 14px;
-                line-height: 20px;
-            }
-        }
-
-        &__email {
-            a {
-                font-size: 14px;
-                line-height: 18px;
-            }
-        }
-
-        &__catalog {
-            margin-right: 35px;
-        }
-        &__shopper {
-            margin-right: 35px;
-        }
-
-        &__quikLink {
-            margin-right: 35px;
-        }
-
-        &__company{
-            margin-right: 35px;
+        &__catalog, &__shopper, &__quikLink, &__company {
+            margin-right: 10px;
         }
     }
 }
@@ -207,31 +211,12 @@
             flex-direction: column;
             align-items: baseline;
         }
-        
-        &__phone {
-            a {
-                font-size: 12px;
-                line-height: 18px;
-            }
-        }
 
         &__email {
             a {
                 font-size: 12px;
                 line-height: 16px;
             }
-        }
-
-        &__catalog {
-            margin-right: 20px;
-        }
-
-        &__shopper {
-            margin-right: 20px;
-        }
-
-        &__quikLink {
-            margin-right: 20px;
         }
 
         &__company{
@@ -302,7 +287,6 @@
         &__info {
             flex-direction: row;
             justify-content: space-around;
-            // width: 510px;
         }
 
         &__logo {
@@ -326,24 +310,11 @@
 
         &__blockInfo {
             margin-bottom: 30px;
-            // flex-direction: column;
         }
 
         &__header {
             font-size: 14px;
             line-height: 18px;
-            // &::after {
-            //     content: '';
-            //     display: inline-block;
-            //     position: absolute;
-            //     left: 35%;
-            //     top: 43%;
-            //     width: 7px;
-            //     height: 7px;
-            //     border-top: 1.5px solid #fff;
-            //     border-right: 1.5px solid #fff;
-            //     transform: rotate(-45deg);
-            // }
         }
 
         &__text {
@@ -379,6 +350,7 @@
 @media screen and (max-width: 475px) {
     .footer-info {
         align-items: flex-start;
+
         &__info {
             flex-direction: column;
             margin: 0 0 48px 0;

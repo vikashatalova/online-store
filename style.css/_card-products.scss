@@ -205,7 +205,7 @@
 @media screen and (max-width: 1100px) {
     .card-products {
         &__container {
-            gap: 20px 20px;
+            gap: 20px 10px;
         }
 
         &__img {
@@ -254,6 +254,14 @@
 
         &__price {
             font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .card-products {
+        &__container {
+            gap: 20px 20px;
         }
     }
 }

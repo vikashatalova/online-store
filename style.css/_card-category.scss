@@ -79,10 +79,10 @@
     }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 400px) {
     .card-category {
         &__container {
-            column-gap: 25px;
+            gap: 10px;
         }
     }
 }

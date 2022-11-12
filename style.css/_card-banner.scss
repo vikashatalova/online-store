@@ -10,6 +10,8 @@
     &__banner-img {
         img {
             max-width: 100%;
+            position: relative;
+            bottom: -3px;
         }
     }
 
@@ -71,7 +73,7 @@
         &__figure2 {
             img {
                 width: 120px;
-                right: -70px;
+                right: -60px;
                 top: -100px;
             }
         }
@@ -102,7 +104,7 @@
 
         &__figure2 {
             img {
-                right: -70px;
+                right: -50px;
             }
         }
 
@@ -137,6 +139,12 @@
         max-width: 590px;
         height: 165px;
 
+        &__banner-img {
+            img {
+                bottom: -7px;
+            }
+        }
+
         &__figure {
             left: -77px;
             img {
@@ -168,21 +176,71 @@
 @media screen and (max-width: 937px) {
     .card-banner {
         max-width: 590px;
-        height: 165px;
+        height: 160px;
 
         &__banner-img {
             max-width: 110%;
+
+            img {
+                bottom: -7px;
+                left: -10px;
+                max-width: 140%;
+            }
+        }
+
+        &__figure {
+            top: -90px;
+            img {
+                width: 40px;
+            }
         }
 
         &__description {
             margin-right: 20px;
         }
+
+        &__figure2 {
+            img {
+                right: 0;
+                top: 10px;
+                width: 60px;
+            }
+        }
     }
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 730px) {
     .card-banner {
-        max-width: 335px;
-        height: 220px;
+        &__banner-img {
+            img {
+                bottom: 3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .card-banner {
+        &__banner-img {
+            img {
+                bottom: -5px;
+            }
+        }
+
+        &__figure2 {
+            img {
+                top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-banner {
+        &__banner-img {
+            img {
+                bottom: -13px;
+            }
+        }
     }
 }

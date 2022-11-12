@@ -2,9 +2,9 @@
     background: linear-gradient(89.56deg, #101D30 0.95%, #0F244A 98.81%);
     border-radius: 60px 60px 0px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     position: relative;
-    padding: 40px 0;
+    padding: 40px 15px;
 
     &__header {
         width: 505px;
@@ -123,10 +123,6 @@
 
 @media screen and (max-width: 540px) {
     .footer-banner {
-        &__description {
-            justify-content: flex-start;
-            margin-left: -60px;
-        }
         &__header {
             line-height: 14px;
         }
@@ -172,12 +168,12 @@
 
 @media screen and (max-width: 457px) {
     .footer-banner {
-        padding: 20px 0;
+        padding: 20px 30px;
 
         &__logo {
-            height: 200px;
-            max-width: 300px;
-            top: -64px;
+            height: 171px;
+            max-width: 230px;
+            top: -35px;
         }
     }
 }

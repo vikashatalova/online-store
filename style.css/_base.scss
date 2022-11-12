@@ -109,7 +109,7 @@ body._lock {
 @media screen and (max-width: 600px) {
     .container {
         // max-width: 550px;
-        max-width: 515px;
+        max-width: 530px;
     }
 }
 
@@ -133,15 +133,15 @@ body._lock {
 
 @media screen and (max-width: 400px) {
     .container {
-        max-width: 330px;
+        max-width: 360px;
     }
 }
 
-@media screen and (max-width: 375px) {
-    .container {
-        max-width: 250px;
-    }
-}
+// @media screen and (max-width: 380px) {
+//     .container {
+//         max-width: 360px;
+//     }
+// }
 
 .button {
     width: 337px;

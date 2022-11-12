@@ -25,29 +25,42 @@
             <nav class="navbar">
                 <ul class="navbar__container">
                     <li class="navbar__list">
-                        <a href="" class="navbar__link">Доставка</a>
+                        <a href="#" class="navbar__link">Доставка</a>
                     </li>
                     <li class="navbar__list">
-                        <a href="" class="navbar__link">Франшиза</a>
+                        <a href="#" class="navbar__link">Франшиза</a>
                     </li>
                     <li class="navbar__list">
-                        <a href="" class="navbar__link">Плоттер</a>
+                        <a href="#" class="navbar__link">Плоттер</a>
                     </li>
                 </ul>
             </nav>
             <div class="header-contacts">
                 <p href="" class="header-contacts__location">г.Москва</p>
                 <img src="image/CaretDown.svg" alt="Стрелка вниз" class="header-contacts__arrow">
+                <div class="header-contacts__menu active-contacts">
+                    <ul class="header-contacts__container">
+                        <li class="header-contacts__list">
+                            <a href="#" class="header-contacts__link">Доставка</a>
+                        </li>
+                        <li class="header-contacts__list">
+                            <a href="#" class="header-contacts__link">Франшиза</a>
+                        </li>
+                        <li class="header-contacts__list">
+                            <a href="#" class="header-contacts__link">Плоттер</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!--переключатель с тменой на светлую тему-->
-            <div class="header-theme">
+            <!-- <div class="header-theme">
                 <div class="header-theme__icons">
                     <img class="header-theme__sun" src="image/sun.svg" alt="Светлая тема">
                     <img class="header-theme__moon" src="image/moon.svg" alt="Темная тема">
                 </div>
                 <input class="header-theme__darkmode-toggle" type="checkbox" id="darkmode-toggle">
                 <label class="header-theme__darkmode" for="darkmode-toggle">
-            </div>
+            </div> -->
             <!--блок по поиску товаров,корзина,владелец-->
             <div class="header-info">
                 <div class="header-info__search">
@@ -57,7 +70,7 @@
                     <div class="header-info__shopping-card">
                         <img src="./image/shoppingcartsimple.svg" alt="Корзина для  шоппинга">
                     </div>
-                    <div class="header-info__shopping-card">
+                    <div class="header-info__profile">
                         <img src="./image/user.svg" alt="Пользователь">
                     </div>
                 </div>
@@ -401,53 +414,49 @@
                 </h3>
                 <button class="footer-banner__button">Перейти в канал</button>
             </div>
-            <div class="footer-banner__container"> 
-                <div class="footer-banner__logo">
-                    <img src="image/telephone.svg" alt="Лого">
-                </div>
+            <div class="footer-banner__logo">
+                <img src="image/telephone.svg" alt="Лого">
             </div>
         </section>
         <div class="footer-banner__line"></div>
         <section class="footer-info">
-            <div class="footer-info__reverse">
-                <div class="footer-info__info">
-                    <img src="image/logoNew.svg" alt="Логотип" class="footer-info__logo">
-                    <div class="footer-info__phone"><a href="tel:89999999999">8 (999) 999-99-99</a></div>
-                    <p class="footer-info__email"><a href="mailto:info@mail.ru">info@lmail.ru</a></p>
-                </div>
-                <div class="footer-info__blockInfo">
-                    <ul class="footer-info__catalog">
-                        <li class="footer-info__header">Каталог</li>
-                        <li class="footer-info__text">Бренды</li>
-                        <li class="footer-info__text">Чехлы</li>
-                        <li class="footer-info__text">Стекла и пленки</li>
-                        <li class="footer-info__text">Гаджеты</li>
-                        <li class="footer-info__text">Кабели и ЗУ</li>
-                        <li class="footer-info__text">Аксессуары</li>
-                    </ul>
-                    <ul class="footer-info__shopper">
-                        <li class="footer-info__header">Покупателям</li>
-                        <li class="footer-info__text">Частые вопросы</li>
-                        <li class="footer-info__text">База знаний</li>
-                        <li class="footer-info__text">Обмен товара</li>
-                        <li class="footer-info__text">Обзоры на Youtube</li>
-                    </ul>
-                    <ul class="footer-info__quikLink">
-                        <li class="footer-info__header">Быстрые ссылки</li>
-                        <li class="footer-info__text">Франшиза</li>
-                        <li class="footer-info__text">1С решения</li>
-                        <li class="footer-info__text">Готовые решения</li>
-                        <li class="footer-info__text">Плоттер</li>
-                    </ul>
-                    <ul class="footer-info__company">
-                        <li class="footer-info__header">О компании</li>
-                        <li class="footer-info__text">О нас</li>
-                        <li class="footer-info__text">Доставка</li>
-                        <li class="footer-info__text">Оплата</li>
-                        <li class="footer-info__text">Системы скидок</li>
-                    </ul>
-                </div>
+            <div class="footer-info__info">
+                <img src="image/logoNew.svg" alt="Логотип" class="footer-info__logo">
+                <div class="footer-info__phone"><a href="tel:89999999999">8 (999) 999-99-99</a></div>
+                <p class="footer-info__email"><a href="mailto:info@mail.ru">info@lmail.ru</a></p>
             </div>
+            <div class="footer-info__blockInfo">
+                <ul class="footer-info__catalog">
+                    <li class="footer-info__header">Каталог</li>
+                    <li class="footer-info__text">Бренды</li>
+                    <li class="footer-info__text">Чехлы</li>
+                    <li class="footer-info__text">Стекла и пленки</li>
+                    <li class="footer-info__text">Гаджеты</li>
+                    <li class="footer-info__text">Кабели и ЗУ</li>
+                    <li class="footer-info__text">Аксессуары</li>
+                </ul>
+                <ul class="footer-info__shopper">
+                    <li class="footer-info__header">Покупателям</li>
+                    <li class="footer-info__text">Частые вопросы</li>
+                    <li class="footer-info__text">База знаний</li>
+                    <li class="footer-info__text">Обмен товара</li>
+                    <li class="footer-info__text">Обзоры на Youtube</li>
+                </ul>
+                <ul class="footer-info__quikLink">
+                    <li class="footer-info__header">Быстрые ссылки</li>
+                    <li class="footer-info__text">Франшиза</li>
+                    <li class="footer-info__text">1С решения</li>
+                    <li class="footer-info__text">Готовые решения</li>
+                    <li class="footer-info__text">Плоттер</li>
+                </ul>
+                <ul class="footer-info__company">
+                    <li class="footer-info__header">О компании</li>
+                    <li class="footer-info__text">О нас</li>
+                    <li class="footer-info__text">Доставка</li>
+                    <li class="footer-info__text">Оплата</li>
+                    <li class="footer-info__text">Системы скидок</li>
+                </ul>
+             </div>
             <div class="footer-info__socialInfo">
                 <h5 class="footer-info__socialHeader">Мы на Youtube и Telegram</h5>
                 <p class="footer-info__description">Подпишитесь, чтобы не пропускать обновления</p>

@@ -148,6 +148,28 @@
             &:not(:last-child) {
                 margin-right: 49px;
             }
+
+            &:first-child::before {
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-top: 1.5px solid #707378;
+                border-right: 1.5px solid #707378;
+                transform: rotate(221deg);
+                margin: 0 10px;
+            }
+
+            &:last-child::after {
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-top: 1.5px solid #707378;
+                border-right: 1.5px solid #707378;
+                transform: rotate(48deg);
+                margin: 0 10px;
+            }
         }
 
         &__text {
