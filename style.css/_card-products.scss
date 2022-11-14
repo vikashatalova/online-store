@@ -150,22 +150,18 @@
 
         &__saleRed {
             img {
-                // left: -158px;
                 left: -151px;
             }
             &::before {
-                // left: -142px;
                 left: -135px;
             }
         }
 
         &__saleGreen {
             img {
-                // left: -158px; 
                 left: -151px;
             }
             &::before {
-                // left: -155px;
                 left: -148px;
             }
         }
@@ -259,9 +255,7 @@
 }
 
 @media screen and (max-width: 730px) {
-    .card-products {
-        &__container {
-            gap: 20px 20px;
-        }
+    .card-products__container {
+        gap: 20px 20px;
     }
 }

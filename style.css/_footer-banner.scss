@@ -53,27 +53,21 @@
 }
 
 @media screen and (max-width: 940px) {
-    .footer-banner {
-        &__header {
-            width: 490px;
-            font-size: 22px;
-        }
+    .footer-banner__header {
+        width: 490px;
+        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 870px) {
-    .footer-banner {
-        &__logo {
-            right: 55px;
-        }
+    .footer-banner__logo {
+        right: 55px;
     }
 }
 
 @media screen and (max-width: 730px) {
-    .footer-banner {
-        &__logo {
-            right: 0;
-        }
+    .footer-banner__logo {
+        right: 0;
     }
 }
 

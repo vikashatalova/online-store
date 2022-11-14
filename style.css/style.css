@@ -18,12 +18,6 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1300px) {
-  .header__logo {
-    margin-right: 10px;
-  }
-}
-
 @media screen and (max-width: 875px) {
   .header__container {
     -webkit-box-pack: center;
@@ -87,6 +81,30 @@
 }
 
 @media screen and (max-width: 530px) {
+  .header-katalog {
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    margin-right: 20px;
+  }
+  .header-katalog::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .header-katalog::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -6px;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+  }
   .header-katalog__before {
     display: none;
   }
@@ -495,6 +513,12 @@ input, textarea {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .border {
+    width: 300px;
+  }
+}
+
 .flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,41 +577,6 @@ input, textarea {
           justify-content: space-between;
   padding: 4.5px 0;
   margin: 0 auto;
-}
-
-.banner__menu {
-  margin-right: 25px;
-}
-
-.banner__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.banner__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 28px;
-  color: #414141;
-}
-
-.banner__link:not(:last-child) {
-  margin-right: 15px;
-}
-
-.banner__link img {
-  margin-left: 4px;
 }
 
 .banner__logo {
@@ -1048,6 +1037,25 @@ input, textarea {
   }
   .product-list__label {
     width: 120px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .product-list__container {
+    max-width: 375px;
+    width: 375px;
+    position: absolute;
+    background: #2E3F65;
+    z-index: 100;
+    top: -248px;
+    padding: 30px;
+    color: #fff;
+    left: -385px;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+  }
+  .product-list .active-menu {
+    left: -8px;
   }
 }
 

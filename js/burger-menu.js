@@ -4,19 +4,17 @@ const productListHidden = document.querySelector('.product-list__hidden');
 
 const burgerMenuButton = document.querySelector('.burger-menu');
 const productList = document.querySelector('.product-list__container');
+const headerKatalog = document.querySelector('.header-katalog');
 
 if (burgerMenuButton) {
     burgerMenuButton.addEventListener('click', (e) => {
         e.preventDefault();
-        // document.body.classList.toggle('_lock');
+        // document.body.classList.toggle('_lock'); // для скрола
         burgerMenuButton.classList.toggle('burger-menu_active');
         productList.classList.toggle('active-menu');
     });
 };
 
-// if (burgerMenuButton.classList.contains('active-menu')) {
-//     productList.classList.remove('active-menu');
-// }
 
 const footerInfoHeader = document.querySelectorAll('.footer-info__header');
 const footerInfoText = document.querySelectorAll('.footer-info__text');
@@ -36,19 +34,6 @@ headerArrow.addEventListener('click', () => {
     navbarContainer.classList.toggle('active-contacts');
 })
 
-
-
-
-
-
-// burgerMenuButton.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     if (productList.style.display === 'none') {
-//         productList.style.display = 'block'
-//     } else {
-//         productList.style.display = 'none'
-//     }
-// });
 
 productListArrow.addEventListener('click', (e) => {
     e.preventDefault();

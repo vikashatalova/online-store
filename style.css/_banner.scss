@@ -14,31 +14,6 @@
         margin: 0 auto;
     }
 
-    &__menu {
-        margin-right: 25px;
-    }
-    
-    &__list {
-        display: flex;
-    }
-
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        font-weight: 400;
-        font-size: 14px;
-        margin-top: 28px;
-        color: #414141;
-        &:not(:last-child) {
-            margin-right: 15px;
-        }
-        img {
-            margin-left: 4px;
-        }
-    }
-
     &__logo {
         margin-top: 42px;
     }

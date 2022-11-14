@@ -72,17 +72,13 @@
 }
 
 @media screen and (max-width: 935px) {
-    .card-category {
-        &__container {
-            column-gap: 10px;
-        }
+    .card-category__container {
+        column-gap: 10px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .card-category {
-        &__container {
-            gap: 10px;
-        }
+    .card-category__container {
+        gap: 10px;
     }
 }

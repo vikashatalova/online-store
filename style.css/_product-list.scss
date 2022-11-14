@@ -1,5 +1,4 @@
 .product-list {
-    // margin-right: 30px;
     position: relative;
 
     &__headers {
@@ -267,13 +266,10 @@
             color: #fff;
             left: -380px;
             transition: left 0.3s ease 0s;
-            // overflow: auto;
-            // display: none;
         }
 
         .active-menu {
             left: 0;
-            // overflow: auto;
         }
 
         &__description {
@@ -302,6 +298,27 @@
         }
         &__label {
             width: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .product-list {
+        &__container {
+            max-width: 375px;
+            width: 375px;
+            position: absolute;
+            background: #2E3F65;
+            z-index: 100;
+            top: -248px;
+            padding: 30px;
+            color: #fff;
+            left: -385px;
+            transition: left 0.3s ease 0s;
+        }
+
+        .active-menu {
+            left: -8px;
         }
     }
 }
